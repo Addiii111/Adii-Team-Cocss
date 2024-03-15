@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-color: #090224; 
+           display: flex ;
+           flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first , .third{
+            width: 140px;
+            height: 140px;
+            background-color: #080427;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 140px;
+            
+        }
+
+        .first{
+            margin-bottom: -40px;
+            z-index: 50;
+        }
+
+        .third{
+            margin-top: -40px;
+            z-index: 50;
+
+        }
+
+        .first-inside , .third-inside {
+            background-color: #EBBCA1;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .second{
+            width: 322px;
+            height: 93px;
+            background-color: #c28885 ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 19px;
+            border-radius: 215px;
+        }
+        .second-inside-left {
+            background-color: #080427;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .second-inside-right {
+            background-color: #080427;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="first-inside"></div>
+    </div>
+    <div class="second">
+        <div class="second-inside-left"></div>
+        <div class="second-inside-right"></div>
+    </div>
+    <div class="third">
+        <div class="third-inside"></div>
+    </div>
+</body>
+</html>
